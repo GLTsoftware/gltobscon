@@ -1,0 +1,32 @@
+#!/usr/bin/perl
+
+# modified on 14 Feb 2003 for ono.
+# previous versions were meant for solaris suns.
+
+# old comments:
+# File: polar.pl
+# Author: Nimesh A. Patel
+# Date: 15 December 1994
+# Assumptions: 1) executed by  cron or the tracking program
+# on invocation by SMARTS. 2) previous files ser7.dat and results.ser7
+# are in the present area, if not, change the paths accordingly in the 
+# open statements. 
+#
+# Modifications(20 May 1998): 1) Use Perl5.004 (and FTP module instead
+# of shell script to do ftp). 2) Take care of year 2000.
+#
+# This program gets the ser7.dat file from IERS
+# by anonymous ftp and reads it to extract the
+# x and y offsets of the pole (in arcseconds)
+# and the value of (UT1-UTC) for the current date.
+# These numbers are appended to a file: results.ser7
+
+# Modified on 26 Dec 2000 to use Net::FTP::Common instead of Net::FTP
+# (for perl 5.6.0).
+
+# Added by Ram 
+print "THIS PROGRAM IS OBSOLETE\n";
+print "Log into obscon; cd /global/polar; Run ./polar.py\n";
+print "See Log Entry 36507\n";
+exit;
+

@@ -1,0 +1,95 @@
+###
+### History of Focus Position
+###
+
+###
+### Band 3 Receiver (Rx86)
+###
+
+##### Near Field (beacon)
+
+2017/12/19
+# Beacon Position: AZ = 230.13368 deg, EL = 2.55697 deg
+Focus X = 0 micron, Y = 0 micron, Z = 0 micron
+azoff = -1685", eloff = +1090"
+
+2017/12/21
+Focus X = +3250 micron, Y = +4000 micron, Z = +430 micron
+azoff = -1595", eloff = +1020"
+
+2017/12/22
+##### Final Near Field Focus Position for 2017-2018 Winter
+Focus X = +4500 micron, Y = +4000 micron, Z = +2500 micron
+azoff = -1580", eloff = +1025"
+
+2018/09/20
+##### Final Near Field Focus Position for 2018-2019 Winter
+# Beacon Position: AZ = 230.245  deg, EL = 2.475  deg @ obscon
+#                  AZ = 230.2322 deg, EL = 2.6791 deg @ ACU
+Focus X = +4500 micron, Y = +4000 micron, Z = +5000 micron
+      Rx = 0.0", Ry = -720", Rz = 0.0"
+
+
+##### Far Field (astronomical sources)
+
+2017/12/25
+Focus X = +4500 micron, Y = +4000 micron, Z = -5000 micron
+azoff = -1590", eloff = +1035"
+
+2018/01/03
+Focus X = +1500 micron, Y = -4000 micron, Z = -500 micron
+azoff = -1880", eloff = +1380"
+
+2018/03/11
+Focus X = +1500 micron, Y = -4000 micron, Z = -135 micron
+
+2018/03/28
+Focus X = +150 micron, Y = -4300 micron, Z = -135 micron
+
+2018/03/29
+### Final Focus Position for 2017-2018 Winter
+Focus X = +150 micron, Y = -4300 micron, Z = 460 micron
+
+
+
+###
+### Band 6 Receiver (Rx230)
+###
+
+2018/01/14
+Focus X = +1500 micron, Y = -4000 micron, Z = -500 micron
+azoff = -1655", eloff = +1355"
+
+2018/01/15
+Focus X = +1500 micron, Y = -4000 micron, Z = -1000 micron
+azoff = -1620", eloff = +1370"
+
+2018/01/16
+Focus X = +2500 micron, Y = -3000 micron, Z = -1000 micron
+azoff = -1620", eloff = +1345"
+
+2018/01/17
+Focus X = +2500 micron, Y = -3000 micron, Z = -1500 micron
+azoff = -1630", eloff = +1320"
+
+2018/01/18
+Focus X = +1000 micron, Y = -3000 micron, Z = -1500 micron
+azoff = -1670", eloff = +1330"
+
+2018/03/17
+Focus X = +1000 micron, Y = -3000 micron, Z = -1700 micron
+
+2018/03/24
+### Final Focus Position for 2017-2018 Winter
+Focus X = +1750 micron, Y = -3400 micron, Z = -1700 micron
+
+
+
+###
+### Band 7 Receiver (Rx345)
+###
+
+2018/10/13
+### Final Focus Position for 2018-2019 Winter
+Focus X = +2500 micron, Y = -3000 micron, Z = +350 micron
+

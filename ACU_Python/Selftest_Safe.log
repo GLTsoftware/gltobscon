@@ -1,0 +1,1466 @@
+Antenna Number:   1
+ACU version:      1.0.5
+PLC version:      1.6
+Self-test version: 1.1.0
+
+NOV 07 22:04:00:2018 Self-test started
+161 self-test steps registered.
+
+Executing self-test step 1 = self-test table entry #1.
+Failure Reset
+Result: OK
+
+Executing self-test step 2 = self-test table entry #2.
+System Test
+General System Status Bytes
+Received from PLC referring to ICD-1013019-31420
+4.3.9.1
+All Values are decimal
+Byte 1  = 0
+Byte 2  = 0
+Byte 3  = 4
+Byte 4  = 0
+Byte 5  = 65
+Byte 6  = 0
+Byte 7  = 0
+Byte 8  = 0
+0 Errors were fount
+Result: OK
+
+Executing self-test step 3 = self-test table entry #3.
+Shutter te
+Result: OK
+
+Executing self-test step 4 = self-test table entry #4.
+Az stow pin te
+Result: OK
+
+Executing self-test step 5 = self-test table entry #5.
+El stow pin te
+Result: OK
+
+Executing self-test step 6 = self-test table entry #6.
+Azimut Axis Test
+Axis Status Bytes Azimuth
+Received from PLC referring to ICD-1013019-31420
+4.3.10.1
+All Values are decimal
+Byte 1  = 0
+Byte 2  = 0
+Byte 3  = 0
+Byte 4  = 4
+Byte 5  = 0
+Byte 6  = 196
+Byte 7  = 72
+Byte 8  = 0
+Byte 9  = 32
+Byte 10  = 0
+Byte 11  = 0
+Byte 12  = 0
+0 Errors were fount
+Result: OK
+
+Executing self-test step 7 = self-test table entry #8.
+Elevation Axis Test
+Axis Status Bytes Azimuth
+Received from PLC referring to ICD-1013019-31420
+4.3.10.1
+All Values are decimal
+Byte 1  = 0
+Byte 2  = 0
+Byte 3  = 0
+Byte 4  = 4
+Byte 5  = 4
+Byte 6  = 76
+Byte 7  = 72
+Byte 8  = 0
+Byte 9  = 0
+Byte 10  = 0
+Byte 11  = 64
+Byte 12  = 0
+el[0 ]= 0
+el[1 ]= 0
+el[2 ]= 0
+el[3 ]= 4
+el[4 ]= 4
+el[5 ]= 76
+el[6 ]= 72
+el[7 ]= 0
+el[8 ]= 0
+el[9 ]= 0
+el[10 ]= 64
+el[11 ]= 0
+El Axis status bit "Gearbox 3 low oil level" is set.
+1 Errors were fount
+Result: ERROR                Value: FAIL
+
+Executing self-test step 8 = self-test table entry #12.
+Check mms status
+Result: OK
+
+Executing self-test step 9 = self-test table entry #25.
+Result: OK
+
+Executing self-test step 10 = self-test table entry #100.
+Motorheating is already on
+Result: OK
+
+Executing self-test step 11 = self-test table entry #101.
+Az Motor1 current: -0.022 A max: 2.2 A
+Az Motor2 current: 0.022 A max: 2.2 A
+El Motor1 current: 0.012666666666667 A max: 1.9 A
+El Motor2 current: -0.012666666666667 A max: 1.9 A
+El Motor3 current: -0.012666666666667 A max: 1.9 A
+El Motor4 current: 0.012666666666667 A max: 1.9 A
+Result: OK
+
+Executing self-test step 12 = self-test table entry #102.
+Result: ERROR                Value: FAIL
+
+Executing self-test step 13 = self-test table entry #103.
+Result: ERROR                Value: FAIL
+
+Executing self-test step 14 = self-test table entry #104.
+Result: ERROR                Value: FAIL
+
+Executing self-test step 15 = self-test table entry #105.
+Result: ERROR                Value: FAIL
+
+Executing self-test step 16 = self-test table entry #106.
+Result: ERROR                Value: FAIL
+
+Executing self-test step 17 = self-test table entry #107.
+Result: ERROR                Value: FAIL
+
+Executing self-test step 18 = self-test table entry #110.
+Read az motor temps
+Az Motor 1 Temp: 4C
+Az Motor 2 Temp: 3C
+Result: OK
+
+Executing self-test step 19 = self-test table entry #111.
+Activate el preset mode, time-out = 2s.
+Executing "Preset"
+Time-out!  Elevation mode is not PRESET but SHUTDOWN.
+Result: ERROR                Value: FAIL
+
+Executing self-test step 20 = self-test table entry #112.
+Preset el to 5 degrees
+Executing "Stop"
+Executing "Preset"
+Elevation preset position not reached before time-out of 100s.
+Result: ERROR                Value: FAIL
+
+Executing self-test step 21 = self-test table entry #113.
+Activate azel stop mode, time-out = 2s.
+Executing "Stop"
+Result: OK
+
+Executing self-test step 22 = self-test table entry #114.
+Activate az preset mode, time-out = 2s.
+Executing "Preset"
+Time-out!  Azimuth mode is not PRESET but SHUTDOWN.
+Result: ERROR                Value: SKIP
+
+Self-test step 22 = self test table entry #114 is skipping self-test table entry 115.
+Result: ERROR                Value: SKIP
+
+Executing self-test step 23 = self-test table entry #116.
+Activate az rate mode, time-out = 2s.
+Executing "Rate"
+Time-out!  Azimuth mode is not RATE but SHUTDOWN.
+Result: ERROR                Value: SKIP
+
+Self-test step 23 = self test table entry #116 is skipping self-test table entry 117.
+Result: ERROR                Value: SKIP
+
+Self-test step 23 = self test table entry #116 is skipping self-test table entry 118.
+Result: ERROR                Value: SKIP
+
+Self-test step 23 = self test table entry #116 is skipping self-test table entry 119.
+Result: ERROR                Value: SKIP
+
+Self-test step 23 = self test table entry #116 is skipping self-test table entry 120.
+Result: ERROR                Value: SKIP
+
+Self-test step 23 = self test table entry #116 is skipping self-test table entry 121.
+Result: ERROR                Value: SKIP
+
+Self-test step 23 = self test table entry #116 is skipping self-test table entry 122.
+Result: ERROR                Value: SKIP
+
+Self-test step 23 = self test table entry #116 is skipping self-test table entry 123.
+Result: ERROR                Value: SKIP
+
+Executing self-test step 24 = self-test table entry #124.
+Activate az stow mode, time-out = 2s.
+Executing "Stop"
+Executing "Preset"
+Azimuth preset position not reached before time-out of 100s.
+Executing "StowSurvival"
+Stow Position: 5.9313
+StowWnd:0.015
+AzimuthElevation mode incorrect, mode = SHUTDOWN, expected = STOWPOS | STOW | SHUTDOWN.
+5.9394 - 5.9313
+Azimuth stow, abs = 0.0080999999999998, stowwnd = 0.015
+Azimuth in stow position, position = 5.9394, stow position = 5.9313, window = 0.015.
+Azimuth stow position signal set.
+Stow Pin not Retrected: 0
+Azimuth stow pin not retracted signal in not set, but expected.
+Azimuth stow pin inserted signal not set, but expected set.
+Azimuth mode correct, mode = SHUTDOWN.
+stowmodeok = 0
+stowposok = 1
+stowpossignalok = 1
+stowpinretractedok = 0
+shutdownok = 1
+stowpininsertedok = 0
+Check if stow mode az is activated
+Time-out!  Azimuth mode is not STOW but SHUTDOWN.
+Result: ERROR                Value: SKIP
+
+Self-test step 24 = self test table entry #124 is skipping self-test table entry 125.
+Result: ERROR                Value: SKIP
+
+Self-test step 24 = self test table entry #124 is skipping self-test table entry 126.
+Result: ERROR                Value: SKIP
+
+Self-test step 24 = self test table entry #124 is skipping self-test table entry 127.
+Result: ERROR                Value: SKIP
+
+Self-test step 24 = self test table entry #124 is skipping self-test table entry 128.
+Result: ERROR                Value: SKIP
+
+Self-test step 24 = self test table entry #124 is skipping self-test table entry 129.
+Result: ERROR                Value: SKIP
+
+Executing self-test step 25 = self-test table entry #130.
+Check az unstow mode activated
+Unstowing az, time-out = 2s.
+Executing "Unstow"
+Azmode = 1
+Time-out!  Azimuth mode incorrect, mode = SHUTDOWN, expected = UNSTOW.
+Result: ERROR                Value: SKIP
+
+Self-test step 25 = self test table entry #130 is skipping self-test table entry 131.
+Result: ERROR                Value: SKIP
+
+Self-test step 25 = self test table entry #130 is skipping self-test table entry 132.
+Result: ERROR                Value: SKIP
+
+Self-test step 25 = self test table entry #130 is skipping self-test table entry 133.
+Result: ERROR                Value: SKIP
+
+Self-test step 25 = self test table entry #130 is skipping self-test table entry 134.
+Result: ERROR                Value: SKIP
+
+Self-test step 25 = self test table entry #130 is skipping self-test table entry 135.
+Result: ERROR                Value: SKIP
+
+Self-test step 25 = self test table entry #130 is skipping self-test table entry 136.
+Result: ERROR                Value: SKIP
+
+Self-test step 25 = self test table entry #130 is skipping self-test table entry 137.
+Result: ERROR                Value: SKIP
+
+Self-test step 25 = self test table entry #130 is skipping self-test table entry 138.
+Result: ERROR                Value: SKIP
+
+Self-test step 25 = self test table entry #130 is skipping self-test table entry 139.
+Result: ERROR                Value: SKIP
+
+Self-test step 25 = self test table entry #130 is skipping self-test table entry 140.
+Result: ERROR                Value: SKIP
+
+Self-test step 25 = self test table entry #130 is skipping self-test table entry 141.
+Result: ERROR                Value: SKIP
+
+Self-test step 25 = self test table entry #130 is skipping self-test table entry 142.
+Result: ERROR                Value: SKIP
+
+Self-test step 25 = self test table entry #130 is skipping self-test table entry 143.
+Result: ERROR                Value: SKIP
+
+Self-test step 25 = self test table entry #130 is skipping self-test table entry 144.
+Result: ERROR                Value: SKIP
+
+Executing self-test step 26 = self-test table entry #145.
+Read el motor temps
+El Motor 1 Temp: -35C
+El Motor 2 Temp: -37C
+El Motor 3 Temp: -35C
+El Motor 4 Temp: -38C
+Result: OK
+
+Executing self-test step 27 = self-test table entry #146.
+Activate el preset mode, time-out = 2s.
+Executing "Preset"
+Time-out!  Elevation mode is not PRESET but SHUTDOWN.
+Result: ERROR                Value: FAIL
+
+Executing self-test step 28 = self-test table entry #147.
+Preset el to 45 degrees
+Executing "Stop"
+Executing "Preset"
+Elevation preset position not reached before time-out of 100s.
+Result: ERROR                Value: FAIL
+
+Executing self-test step 29 = self-test table entry #148.
+Check open shutter
+Result: OK
+
+Executing self-test step 30 = self-test table entry #157.
+Activate el rate mode, time-out = 3s.
+Executing "Rate"
+Time-out!  Elevation mode is not RATE but SHUTDOWN.
+Result: ERROR                Value: SKIP
+
+Self-test step 30 = self test table entry #157 is skipping self-test table entry 158.
+Result: ERROR                Value: SKIP
+
+Self-test step 30 = self test table entry #157 is skipping self-test table entry 159.
+Result: ERROR                Value: SKIP
+
+Self-test step 30 = self test table entry #157 is skipping self-test table entry 160.
+Result: ERROR                Value: SKIP
+
+Self-test step 30 = self test table entry #157 is skipping self-test table entry 161.
+Result: ERROR                Value: SKIP
+
+Self-test step 30 = self test table entry #157 is skipping self-test table entry 162.
+Result: ERROR                Value: SKIP
+
+Self-test step 30 = self test table entry #157 is skipping self-test table entry 163.
+Result: ERROR                Value: SKIP
+
+Self-test step 30 = self test table entry #157 is skipping self-test table entry 164.
+Result: ERROR                Value: SKIP
+
+Self-test step 30 = self test table entry #157 is skipping self-test table entry 165.
+Result: ERROR                Value: SKIP
+
+Self-test step 30 = self test table entry #157 is skipping self-test table entry 166.
+Result: ERROR                Value: SKIP
+
+Executing self-test step 31 = self-test table entry #167.
+Executing "Stop"
+Executing "Preset"
+Elevation preset position not reached before time-out of 100s.
+Executing "StowMaintenance"
+Stow Position: 90
+StowWnd:0.015
+ElevationElevation mode incorrect, mode = SHUTDOWN, expected = STOWPOS | STOW | SHUTDOWN.
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9999 - 90
+Elevation stow, abs = 75.0001, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+14.9998 - 90
+Elevation stow, abs = 75.0002, stowwnd = 0.015
+Elevation not in stow position, position = 14.9998, stow position = 90, window = 0.015.
+Elevation stow position signal not set, but expected set.
+Stow Pin not Retrected: 0
+Elevation stow pin not retracted signal in not set, but expected.
+Elevation stow pin inserted signal not set, but expected set.
+Elevation mode correct, mode = SHUTDOWN.
+stowmodeok = 0
+stowposok = 0
+stowpossignalok = 0
+stowpinretractedok = 0
+shutdownok = 1
+stowpininsertedok = 0
+Check el maintenance stow mode activated
+Result: ERROR                Value: SKIP
+
+Self-test step 31 = self test table entry #167 is skipping self-test table entry 168.
+Result: ERROR                Value: SKIP
+
+Self-test step 31 = self test table entry #167 is skipping self-test table entry 169.
+Result: ERROR                Value: SKIP
+
+Self-test step 31 = self test table entry #167 is skipping self-test table entry 170.
+Result: ERROR                Value: SKIP
+
+Self-test step 31 = self test table entry #167 is skipping self-test table entry 171.
+Result: ERROR                Value: SKIP
+
+Self-test step 31 = self test table entry #167 is skipping self-test table entry 172.
+Result: ERROR                Value: SKIP
+
+Executing self-test step 32 = self-test table entry #173.
+Check el unstow mode activated
+Unstowing el, time-out = 2s.
+Executing "Unstow"
+Time-out!  Elevation mode incorrect, mode = SHUTDOWN, expected = UNSTOW.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 174.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 175.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 176.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 177.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 178.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 179.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 180.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 181.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 182.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 183.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 184.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 185.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 186.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 187.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 188.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 189.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 190.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 191.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 192.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 193.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 194.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 195.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 196.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 197.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 198.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 199.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 200.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 201.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 202.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 203.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 204.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 205.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 206.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 207.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 208.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 209.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 210.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 211.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 212.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 213.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 214.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 215.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 216.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 217.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 218.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 219.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 220.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 221.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 222.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 223.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 224.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 225.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 226.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 227.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 228.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 229.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 230.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 231.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 232.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 233.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 234.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 235.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 236.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 237.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 238.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 239.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 240.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 241.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 242.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 243.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 244.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 245.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 246.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 247.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 248.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 249.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 250.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 251.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 252.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 253.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 254.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 255.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 256.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 257.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 258.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 259.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 260.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 261.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 262.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 263.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 264.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 265.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 266.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 267.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 268.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 269.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 270.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 271.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 272.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 273.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 274.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 275.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 276.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 277.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 278.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 279.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 280.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 281.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 282.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 283.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 284.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 285.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 286.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 287.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 288.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 289.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 290.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 291.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 292.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 293.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 294.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 295.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 296.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 297.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 298.
+Result: ERROR                Value: SKIP
+
+Self-test step 32 = self test table entry #173 is skipping self-test table entry 299.
+Result: ERROR                Value: SKIP
+
+Executing self-test step 33 = self-test table entry #500.
+Reading Temperature Sensor 1 = -18 C
+Reading Temperature Sensor 2 = -18.7 C
+Reading Temperature Sensor 3 = -18.4 C
+Reading Temperature Sensor 4 = -18.5 C
+Reading Temperature Sensor 5 = 12.3 C
+Reading Temperature Sensor 6 = 11.6 C
+Reading Temperature Sensor 7 = 11.1 C
+Reading Temperature Sensor 8 = 9.5 C
+Reading Temperature Sensor 9 = 12 C
+Reading Temperature Sensor 10 = -10.5 C
+Reading Temperature Sensor 11 = -14.6 C
+Reading Temperature Sensor 12 = -18.5 C
+Reading Temperature Sensor 13 = -15.9 C
+Reading Temperature Sensor 14 = -16 C
+Reading Temperature Sensor 15 = -17.9 C
+Reading Temperature Sensor 16 = -18.2 C
+Reading Temperature Sensor 17 = -17.3 C
+Reading Temperature Sensor 18 = -17.7 C
+Reading Temperature Sensor 19 = -19 C
+Reading Temperature Sensor 20 = -19.9 C
+Reading Temperature Sensor 21 = -0.5 C
+Reading Temperature Sensor 22 = 0.5 C
+Reading Temperature Sensor 23 = 0 C
+Reading Temperature Sensor 24 = -1.7 C
+Reading Temperature Sensor 25 = -0.9 C
+Reading Temperature Sensor 26 = 0.1 C
+Reading Temperature Sensor 27 = -22.5 C
+Reading Temperature Sensor 28 = -20.4 C
+Reading Temperature Sensor 29 = -21.4 C
+Reading Temperature Sensor 30 = -21.9 C
+Reading Temperature Sensor 31 = -21.4 C
+Reading Temperature Sensor 32 = 299.99 C
+Reading Temperature Sensor 33 = -25.5 C
+Reading Temperature Sensor 34 = 299.99 C
+Reading Temperature Sensor 35 = 299.99 C
+Reading Temperature Sensor 36 = -21 C
+Reading Temperature Sensor 37 = -9.8 C
+Reading Temperature Sensor 38 = 0 C
+Reading Temperature Sensor 39 = 0 C
+Reading Temperature Sensor 40 = 0 C
+Reading Temperature Sensor 41 = 0 C
+Reading Temperature Sensor 42 = 0 C
+Reading Temperature Sensor 43 = 0 C
+Reading Temperature Sensor 44 = 0 C
+Reading Temperature Sensor 45 = 0 C
+Reading Temperature Sensor 46 = 0 C
+Reading Temperature Sensor 47 = 0 C
+Reading Temperature Sensor 48 = 0 C
+Reading Temperature Sensor 49 = 0 C
+Reading Temperature Sensor 50 = 0 C
+Ambient Temperature = -21
+Result: OK
+
+Executing self-test step 34 = self-test table entry #501.
+Temperatures at Receiver Cabin Walls
+Sensors 5-9
+Max. Temperature12.3 C
+Min. Temperature9.5 C
+Mean Temperature11.3 C
+Expected all Sensors to be in Range: 8C to 20C
+Result: OK
+
+Executing self-test step 35 = self-test table entry #502.
+Temperatures at Receiver Cabin Walls(Delta)
+Sensors 5-9
+Expected Delta between max and min:2
+Delta (12.3C - 9.5 C) :2.8 C
+2.8C -> expected: < 2C
+Result: ERROR                Values: 2.8
+
+Executing self-test step 36 = self-test table entry #503.
+Temperatures at Yoke (Diff)
+Sensors 10-20
+Mean Temperature: -16.863636363636 C
+All Temperature sensors should be in the range of:
+-21.863636363636 C  -  -11.863636363636 C
+1 Sensors were out of this range.
+Result: ERROR                Values: 1
+
+Executing self-test step 37 = self-test table entry #504.
+Temperatures at Support Cone (Diff)
+Sensors 1-4
+Mean Temperature: -16.863636363636 C
+All Temperature sensors should be in the range of:
+-19.363636363636 C  -  -14.363636363636 C
+Result: OK
+
+Executing self-test step 38 = self-test table entry #505.
+Temperatures at Support Cone
+Sensors 1-4
+Temperatures between -35 C and 5 C expected.
+-18 C
+-18.7 C
+-18.4 C
+-18.5 C
+Result: OK
+
+Executing self-test step 39 = self-test table entry #506.
+Temperatures at Bottom of Quadlegs
+Sensors 32-35
+Ambient Temperature: -21 C
+-31 C - -11 C expected
+299.99 C
+-25.5 C
+299.99 C
+299.99 C
+Result: ERROR                Values: 3
+
+Executing self-test step 40 = self-test table entry #507.
+Temperatures at Top of Quadlegs (Diff)
+Sensors 27-31
+Result: OK
+
+Executing self-test step 41 = self-test table entry #508.
+Temperatures at Top of Quadlegs
+Sensors 27-31
+Result: OK
+
+Executing self-test step 42 = self-test table entry #509.
+Temperature Sensor 37 must be between -20 C and +20 C
+measured value: -9.8 C
+Result: OK
+
+Executing self-test step 43 = self-test table entry #510.
+Temperatures at Az Gearboxes (Diff)
+Sensors 21-22
+Mean Temperature: 0 C
+All Temperature sensors should be in the range of:
+-5 C  -  5 C
+Result: OK
+
+Executing self-test step 44 = self-test table entry #511.
+Temperatures at Az Gearboxes
+Sensors 21-22
+Gearbox Tempertaures should be between -10 C and 10 C
+Result: OK
+
+Executing self-test step 45 = self-test table entry #512.
+Temperatures at El Gearboxes (Diff)
+Sensors 23-26
+Mean Temperature: -0.625 C
+All Temperature sensors should be in the range of:
+-5.625 C  -  4.375 C
+Result: OK
+
+Executing self-test step 46 = self-test table entry #513.
+Temperatures at El Gearboxes
+Sensors 23-26
+Gearbox Tempertaures should be between -10 C and 10 C
+Result: OK
+
+Executing self-test step 47 = self-test table entry #530.
+Linear Sensor 1A
++- 1mm exspected
+Reading Linear Sensor 1A = -0.223 mm
+Result: OK
+
+Executing self-test step 48 = self-test table entry #531.
+Linear Sensor 1B
++- 1mm exspected
+Reading Linear Sensor 1B = -0.189 mm
+Result: OK
+
+Executing self-test step 49 = self-test table entry #532.
++- 1mm exspected
+Linear Sensor 2A
+Reading Linear Sensor 2A = -0.072 mm
+Result: OK
+
+Executing self-test step 50 = self-test table entry #533.
++- 1mm exspected
+Linear Sensor 2B
+Reading Linear Sensor 2B = -0.045 mm
+Result: OK
+
+Executing self-test step 51 = self-test table entry #550.
+Activate az preset mode, time-out = 2s.
+Executing "Preset"
+Time-out!  Azimuth mode is not PRESET but SHUTDOWN.
+Result: ERROR                Value: SKIP
+
+Self-test step 51 = self test table entry #550 is skipping self-test table entry 551.
+Result: ERROR                Value: SKIP
+
+Self-test step 51 = self test table entry #550 is skipping self-test table entry 552.
+Result: ERROR                Value: SKIP
+
+Self-test step 51 = self test table entry #550 is skipping self-test table entry 553.
+Result: ERROR                Value: SKIP
+
+Self-test step 51 = self test table entry #550 is skipping self-test table entry 554.
+Result: ERROR                Value: SKIP
+
+Self-test step 51 = self test table entry #550 is skipping self-test table entry 555.
+Result: ERROR                Value: SKIP
+
+Self-test step 51 = self test table entry #550 is skipping self-test table entry 556.
+Result: ERROR                Value: SKIP
+
+Self-test step 51 = self test table entry #550 is skipping self-test table entry 557.
+Result: ERROR                Value: SKIP
+
+Self-test step 51 = self test table entry #550 is skipping self-test table entry 558.
+Result: ERROR                Value: SKIP
+
+Self-test step 51 = self test table entry #550 is skipping self-test table entry 559.
+Result: ERROR                Value: SKIP
+
+Self-test step 51 = self test table entry #550 is skipping self-test table entry 560.
+Result: ERROR                Value: SKIP
+
+Executing self-test step 52 = self-test table entry #561.
+Tiltmeter 1 Temperature
+Temperature of Sensor 12: -18.5C
+Temperature of Tiltmeter1: -16.5C
+Result: OK
+
+Executing self-test step 53 = self-test table entry #562.
+Tiltmeter 2 Temperature
+Temperature of Cone: -18.4C
+Temperature of Tiltmeter2: -18.8C
+Result: OK
+
+Executing self-test step 54 = self-test table entry #563.
+Tiltmeter 3 Temperature
+Temperature of Cone: -18.4C
+Temperature of Tiltmeter3: -18.9C
+Result: OK
+
+Executing self-test step 55 = self-test table entry #564.
+Tiltmeter 2 Tilt
+Tilt should be between -800 mdeg and 800 mdeg
+Tilt X : -13.087 mdeg
+Tilt Y : 7.5548 mdeg
+Result: OK
+
+Executing self-test step 56 = self-test table entry #565.
+Tiltmeter 3 Tilt
+Tilt should be between -40 mdeg and 40 mdeg
+Tilt X : -1.6952 mdeg
+Tilt Y : -34.2107 mdeg
+Result: OK
+
+Executing self-test step 57 = self-test table entry #900.
+Shutter te
+Result: OK
+
+Executing self-test step 58 = self-test table entry #901.
+Az stow pin te
+Result: OK
+
+Executing self-test step 59 = self-test table entry #902.
+El stow pin te
+Result: OK
+
+Executing self-test step 60 = self-test table entry #903.
+System Test
+General System Status Bytes
+Received from PLC referring to ICD-1013019-31420
+4.3.9.1
+All Values are decimal
+Byte 1  = 0
+Byte 2  = 0
+Byte 3  = 5
+Byte 4  = 0
+Byte 5  = 32
+Byte 6  = 0
+Byte 7  = 0
+Byte 8  = 0
+System status bit "SAFE" is set.
+1 Errors were fount
+Result: ERROR                Value: FAIL
+
+Executing self-test step 61 = self-test table entry #904.
+Azimut Axis Test
+Axis Status Bytes Azimuth
+Received from PLC referring to ICD-1013019-31420
+4.3.10.1
+All Values are decimal
+Byte 1  = 2
+Byte 2  = 0
+Byte 3  = 0
+Byte 4  = 4
+Byte 5  = 0
+Byte 6  = 196
+Byte 7  = 8
+Byte 8  = 0
+Byte 9  = 32
+Byte 10  = 0
+Byte 11  = 0
+Byte 12  = 0
+0 Errors were fount
+Result: OK
+
+Executing self-test step 62 = self-test table entry #906.
+Elevation Axis Test
+Axis Status Bytes Azimuth
+Received from PLC referring to ICD-1013019-31420
+4.3.10.1
+All Values are decimal
+Byte 1  = 2
+Byte 2  = 0
+Byte 3  = 0
+Byte 4  = 4
+Byte 5  = 4
+Byte 6  = 76
+Byte 7  = 8
+Byte 8  = 0
+Byte 9  = 0
+Byte 10  = 0
+Byte 11  = 64
+Byte 12  = 0
+el[0 ]= 2
+el[1 ]= 0
+el[2 ]= 0
+el[3 ]= 4
+el[4 ]= 4
+el[5 ]= 76
+el[6 ]= 8
+el[7 ]= 0
+el[8 ]= 0
+el[9 ]= 0
+el[10 ]= 64
+el[11 ]= 0
+El Axis status bit "Gearbox 3 low oil level" is set.
+1 Errors were fount
+Result: ERROR                Value: FAIL
+
+Executing self-test step 63 = self-test table entry #910.
+Check mms status
+Result: OK
+
+Executing "StowSurvival"
+201 out of 161 tests failed.
+
+NOV 07 22:22:58:2018 Self-test finished

@@ -1,0 +1,214 @@
+#!/usr/bin/perl
+
+# modified on 14 Feb 2003 for ono.
+# previous versions were meant for solaris suns.
+
+# old comments:
+# File: polar.pl
+# Author: Nimesh A. Patel
+# Date: 15 December 1994
+# Assumptions: 1) executed by  cron or the tracking program
+# on invocation by SMARTS. 2) previous files ser7.dat and results.ser7
+# are in the present area, if not, change the paths accordingly in the 
+# open statements. 
+#
+# Modifications(20 May 1998): 1) Use Perl5.004 (and FTP module instead
+# of shell script to do ftp). 2) Take care of year 2000.
+#
+# This program gets the ser7.dat file from IERS
+# by anonymous ftp and reads it to extract the
+# x and y offsets of the pole (in arcseconds)
+# and the value of (UT1-UTC) for the current date.
+# These numbers are appended to a file: results.ser7
+
+# Modified on 26 Dec 2000 to use Net::FTP::Common instead of Net::FTP
+# (for perl 5.6.0).
+
+# Added by Ram 
+print "THIS PROGRAM IS OBSOLETE\n";
+print "See Log Entry 36507\n";
+exit 1;
+
+# Load the ftp module. 
+use Net::FTP;
+
+# If today is a Thursday, then 
+# get the file by anonymous ftp....
+
+$getNewFile=0;
+
+$openreturn=open(INFILE,"/global/polar/ser7.dat") ;
+if(!$openreturn) {print "Could not find ser7.dat. Getting a new one.\n";
+	$getNewFile=1; }
+else {
+while(<INFILE>) {
+$fileLine=$_;
+
+if($fileLine=~/Vol./) {
+($fileday,$filemonth,$fileyear,$restofline)=split(' ',$fileLine);
+}
+}
+close(INFILE);
+}
+
+
+if ((localtime)[6] eq 3) {$getNewFile=1;}
+
+# Using gmtime to get the GMT string
+# and parsing it into some usable numbers.
+
+$d=(gmtime)[3];
+$month=(January,February,March,April,May,June,July,August,September,October,November,December)[(gmtime)[4]];
+$year=(gmtime)[5];
+
+# gmtime returns only the hundreds of years, we need to add the century.
+# Postponing the year-2000 problem to 2098!
+
+if($year<98) { $year+=2000;}
+else {$year+=1900;}   
+
+# adding 1 because the array index for month goes from 0 to 11.
+$mn=1+(gmtime)[4]; 
+
+#debug
+print "$d,$month,$year\n";
+
+if($fileyear>$year){$getNewFile=1;}
+if($fileyear==$year){
+if($filemonth ne $month) {$getNewFile=1;}
+if($filemonth eq $month) {
+	if($d > ($fileday+6)) {$getNewFile=1;}
+	}
+}
+
+if ($getNewFile==1) {
+$ftp=Net::FTP->new("maia.usno.navy.mil",Debug=>1);
+print "Connecting...\n";
+$ftp->login("anonymous",'npatel@cfa.harvard.edu');
+print "Logging on...\n";
+$ftp->cwd("/ser7");
+print "Changed directory to ser7...\n";
+$ftp->get("ser7.dat");
+print "Getting ser7.dat...\n";
+$ftp->quit;
+print "Done.\n";
+}
+#
+#debug
+#print "Got new ser7.dat file...\n";
+
+
+# Using the formula given in the Explanatory Supplement
+# for calculating JD from the given gregorian calendar
+# date in terms of day number, month number and year number.
+# lots of int()s have had to be inserted because perl 
+# cannot do integer arithmetic.
+
+$term1=int((1461*int(($year+4800+int(($mn-14)/12))))/4);  
+$term2=int((367*($mn-2-12*(int(($mn-14)/12))))/12);
+$term3=int((3*int(($year+4900+int(($mn-14)/12))/100))/4);
+$JD=$term1+$term2-$term3+$d-32075;
+
+# subtract 2400000 to get MJD.
+
+$MJD=$JD-2400000;
+
+#debug
+#print "$term1\n$term2\n$term3\n";
+#print "Julian Day= $MJD\n";
+
+open(INFILE,"/global/polar/ser7.dat") || die "Could not find the file ser7.dat\n";
+
+@eachline=<INFILE>;
+close(INFILE);
+
+# finding the line number after which the relevant data appears....
+
+        for($i=0;$i<=$#eachline;$i++)
+
+	{
+
+	$_=$eachline[$i];
+
+	if (/ MJD      x\(arcsec\)   y\(arcsec\)   UT1-UTC\(sec\)/)
+
+		{
+			$linenum=$i;
+			last;
+		}
+	}
+
+for($i=$linenum;$i<=$#eachline;$i++)
+{
+	$_=$eachline[$i];
+	if (/$MJD/) {
+
+# counting the number of words on this line ... 
+
+	@words=split(' ',$_);
+	$wordnos=$#words+1;
+
+# ... index accordingly...
+
+# This stuff is to avoid confusing ourselves the line with 
+# the current MJD happens to have printed a leading date
+
+
+	$index=$wordnos - 3;
+
+# Now pull out xoffset, yoffset and dut....
+
+	@pars=split(' ',$_);
+
+	$x=$pars[$index];
+	$y=$pars[$index+1];
+	$dut=$pars[$index+2];
+
+	#print "MJD=$MJD x=$x y=$y dut=$dut\n";
+
+	&results ;
+	exit 0;
+	
+
+	};
+}
+	sub results
+	{
+
+		# Open the results file and check its last line--- see if the
+		# current values are way off; if so, send an alarm and exit
+		#(alarm for now== email to my beeper; later this will be among
+		# other alarms of the Diagnostics and Error Software.
+
+	open(OUTFILE,"/global/polar/results.ser7") || die "Could not find the file results.ser7\n";
+	while(<OUTFILE>){($MJDp,$xp,$yp,$dutp)=split(' ',$_);}
+	close(OUTFILE);
+
+	open(OUTFILE,">>/global/polar/results.ser7") || die "Could not find the file results.ser7\n";
+	open(POLARFILE,">/global/polar/polar.dat") 
+		|| die "Could not open  the file polar.dat\n";
+
+	$dif_x=abs($x-$xp);
+	$dif_y=abs($y-$yp);
+	$dif_dutp=abs($dut-$dutp);
+
+	print OUTFILE "$MJD    $x    $y    $dut\n";
+	print POLARFILE "$MJD    $x    $y    $dut\n";
+#	$response = `ssh hal9000 /common/polar/writepolar $x $y $dut`;
+#	print "$response\n";
+	#if(($dif_x ge 0.1) || ($dif_y ge 0.1) || ($dif_dutp ge 0.1)) {&alarm};
+
+	close(POLARFILE);
+	close (OUTFILE);
+	exit 0;
+
+	}
+
+	sub alarm
+	{
+	open(MAIL,"|mail npatel\@cfa.harvard.edu");
+	print "Alarm!";
+	print MAIL "Alarm! IERS script failed.\nPlease check the reading of ser7.dat manually.\n";  
+	close(MAIL);
+	exit 0;
+	}

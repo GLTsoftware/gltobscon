@@ -1,0 +1,10 @@
+###
+### How to move the focus position
+###
+
+To move to the focus position of X = +1000 micron, Y = -3000 micron, and Z = -1500 micron:
+
+> /home/obscon/hpctrl/hpPos setAbsPos 1000.0 -3000.0 -1500.0 0.0 0.0 0.0
+
+
+See the most recent focus positions in "FocusPositionHistory.txt".

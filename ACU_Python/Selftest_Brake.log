@@ -1,0 +1,998 @@
+Antenna Number:   1
+ACU version:      1.0.5
+PLC version:      1.6
+Self-test version: 1.1.0
+
+NOV 08 01:25:49:2018 Self-test started
+161 self-test steps registered.
+
+Executing self-test step 1 = self-test table entry #1.
+Failure Reset
+Result: OK
+
+Executing self-test step 2 = self-test table entry #2.
+System Test
+General System Status Bytes
+Received from PLC referring to ICD-1013019-31420
+4.3.9.1
+All Values are decimal
+Byte 1  = 0
+Byte 2  = 0
+Byte 3  = 4
+Byte 4  = 0
+Byte 5  = 65
+Byte 6  = 0
+Byte 7  = 0
+Byte 8  = 0
+0 Errors were fount
+Result: OK
+
+Executing self-test step 3 = self-test table entry #3.
+Shutter te
+Result: OK
+
+Executing self-test step 4 = self-test table entry #4.
+Az stow pin te
+Result: OK
+
+Executing self-test step 5 = self-test table entry #5.
+El stow pin te
+Result: OK
+
+Executing self-test step 6 = self-test table entry #6.
+Azimut Axis Test
+Axis Status Bytes Azimuth
+Received from PLC referring to ICD-1013019-31420
+4.3.10.1
+All Values are decimal
+Byte 1  = 0
+Byte 2  = 0
+Byte 3  = 0
+Byte 4  = 4
+Byte 5  = 0
+Byte 6  = 196
+Byte 7  = 72
+Byte 8  = 0
+Byte 9  = 32
+Byte 10  = 0
+Byte 11  = 0
+Byte 12  = 0
+0 Errors were fount
+Result: OK
+
+Executing self-test step 7 = self-test table entry #8.
+Elevation Axis Test
+Axis Status Bytes Azimuth
+Received from PLC referring to ICD-1013019-31420
+4.3.10.1
+All Values are decimal
+Byte 1  = 0
+Byte 2  = 0
+Byte 3  = 0
+Byte 4  = 4
+Byte 5  = 4
+Byte 6  = 76
+Byte 7  = 72
+Byte 8  = 0
+Byte 9  = 0
+Byte 10  = 0
+Byte 11  = 64
+Byte 12  = 0
+el[0 ]= 0
+el[1 ]= 0
+el[2 ]= 0
+el[3 ]= 4
+el[4 ]= 4
+el[5 ]= 76
+el[6 ]= 72
+el[7 ]= 0
+el[8 ]= 0
+el[9 ]= 0
+el[10 ]= 64
+el[11 ]= 0
+El Axis status bit "Gearbox 3 low oil level" is set.
+1 Errors were fount
+Result: ERROR                Value: FAIL
+
+Executing self-test step 8 = self-test table entry #12.
+Check mms status
+Result: OK
+
+Executing self-test step 9 = self-test table entry #25.
+Result: OK
+
+Executing self-test step 10 = self-test table entry #100.
+Motorheating is already on
+Result: OK
+
+Executing self-test step 11 = self-test table entry #101.
+Az Motor1 current: -2.2 A max: 2.2 A
+Az Motor2 current: 2.2 A max: 2.2 A
+El Motor1 current: 1.918 A max: 2 A
+El Motor2 current: -1.912 A max: 2 A
+El Motor3 current: -1.9066666666667 A max: 2 A
+El Motor4 current: 1.9003333333333 A max: 2 A
+Result: OK
+
+Executing self-test step 12 = self-test table entry #102.
+Result: OK
+
+Executing self-test step 13 = self-test table entry #103.
+Result: OK
+
+Executing self-test step 14 = self-test table entry #104.
+Result: OK
+
+Executing self-test step 15 = self-test table entry #105.
+Result: OK
+
+Executing self-test step 16 = self-test table entry #106.
+Result: OK
+
+Executing self-test step 17 = self-test table entry #107.
+Result: OK
+
+Executing self-test step 18 = self-test table entry #110.
+Read az motor temps
+Az Motor 1 Temp: 16C
+Az Motor 2 Temp: 14C
+Result: OK
+
+Executing self-test step 19 = self-test table entry #111.
+Activate el preset mode, time-out = 2s.
+Executing "Preset"
+Result: OK
+
+Executing self-test step 20 = self-test table entry #112.
+Preset el to 5 degrees
+Executing "Stop"
+Executing "Preset"
+Elevation preset position reached before time-out of 100s.
+Elevation position error within range, position error = 0, delta = 0.0025.
+Result: OK
+
+Executing self-test step 21 = self-test table entry #113.
+Activate azel stop mode, time-out = 2s.
+Executing "Stop"
+Result: OK
+
+Executing self-test step 22 = self-test table entry #114.
+Activate az preset mode, time-out = 2s.
+Executing "Preset"
+Result: OK
+
+Executing self-test step 23 = self-test table entry #115.
+Preset Az to 0 degrees
+Executing "Stop"
+Executing "Preset"
+Azimuth preset position not reached before time-out of 100s.
+Result: ERROR                Value: FAIL
+
+Executing self-test step 24 = self-test table entry #116.
+Activate az rate mode, time-out = 2s.
+Executing "Rate"
+Time-out!  Azimuth mode is not RATE but SHUTDOWN.
+Result: ERROR                Value: SKIP
+
+Self-test step 24 = self test table entry #116 is skipping self-test table entry 117.
+Result: ERROR                Value: SKIP
+
+Self-test step 24 = self test table entry #116 is skipping self-test table entry 118.
+Result: ERROR                Value: SKIP
+
+Self-test step 24 = self test table entry #116 is skipping self-test table entry 119.
+Result: ERROR                Value: SKIP
+
+Self-test step 24 = self test table entry #116 is skipping self-test table entry 120.
+Result: ERROR                Value: SKIP
+
+Self-test step 24 = self test table entry #116 is skipping self-test table entry 121.
+Result: ERROR                Value: SKIP
+
+Self-test step 24 = self test table entry #116 is skipping self-test table entry 122.
+Result: ERROR                Value: SKIP
+
+Self-test step 24 = self test table entry #116 is skipping self-test table entry 123.
+Result: ERROR                Value: SKIP
+
+Executing self-test step 25 = self-test table entry #124.
+Activate az stow mode, time-out = 2s.
+Executing "Stop"
+Executing "Preset"
+Azimuth preset position not reached before time-out of 100s.
+Executing "StowSurvival"
+Stow Position: 5.9313
+StowWnd:0.015
+AzimuthElevation mode incorrect, mode = SHUTDOWN, expected = STOWPOS | STOW | SHUTDOWN.
+5.9235 - 5.9313
+Azimuth stow, abs = 0.0078000000000005, stowwnd = 0.015
+Azimuth in stow position, position = 5.9236, stow position = 5.9313, window = 0.015.
+Azimuth stow position signal set.
+Stow Pin not Retrected: 0
+Azimuth stow pin not retracted signal in not set, but expected.
+Azimuth stow pin inserted signal not set, but expected set.
+Azimuth mode correct, mode = SHUTDOWN.
+stowmodeok = 0
+stowposok = 1
+stowpossignalok = 1
+stowpinretractedok = 0
+shutdownok = 1
+stowpininsertedok = 0
+Check if stow mode az is activated
+Time-out!  Azimuth mode is not STOW but SHUTDOWN.
+Result: ERROR                Value: SKIP
+
+Self-test step 25 = self test table entry #124 is skipping self-test table entry 125.
+Result: ERROR                Value: SKIP
+
+Self-test step 25 = self test table entry #124 is skipping self-test table entry 126.
+Result: ERROR                Value: SKIP
+
+Self-test step 25 = self test table entry #124 is skipping self-test table entry 127.
+Result: ERROR                Value: SKIP
+
+Self-test step 25 = self test table entry #124 is skipping self-test table entry 128.
+Result: ERROR                Value: SKIP
+
+Self-test step 25 = self test table entry #124 is skipping self-test table entry 129.
+Result: ERROR                Value: SKIP
+
+Executing self-test step 26 = self-test table entry #130.
+Check az unstow mode activated
+Unstowing az, time-out = 2s.
+Executing "Unstow"
+Azmode = 1
+Time-out!  Azimuth mode incorrect, mode = SHUTDOWN, expected = UNSTOW.
+Result: ERROR                Value: SKIP
+
+Self-test step 26 = self test table entry #130 is skipping self-test table entry 131.
+Result: ERROR                Value: SKIP
+
+Self-test step 26 = self test table entry #130 is skipping self-test table entry 132.
+Result: ERROR                Value: SKIP
+
+Self-test step 26 = self test table entry #130 is skipping self-test table entry 133.
+Result: ERROR                Value: SKIP
+
+Self-test step 26 = self test table entry #130 is skipping self-test table entry 134.
+Result: ERROR                Value: SKIP
+
+Self-test step 26 = self test table entry #130 is skipping self-test table entry 135.
+Result: ERROR                Value: SKIP
+
+Self-test step 26 = self test table entry #130 is skipping self-test table entry 136.
+Result: ERROR                Value: SKIP
+
+Self-test step 26 = self test table entry #130 is skipping self-test table entry 137.
+Result: ERROR                Value: SKIP
+
+Self-test step 26 = self test table entry #130 is skipping self-test table entry 138.
+Result: ERROR                Value: SKIP
+
+Self-test step 26 = self test table entry #130 is skipping self-test table entry 139.
+Result: ERROR                Value: SKIP
+
+Self-test step 26 = self test table entry #130 is skipping self-test table entry 140.
+Result: ERROR                Value: SKIP
+
+Self-test step 26 = self test table entry #130 is skipping self-test table entry 141.
+Result: ERROR                Value: SKIP
+
+Self-test step 26 = self test table entry #130 is skipping self-test table entry 142.
+Result: ERROR                Value: SKIP
+
+Self-test step 26 = self test table entry #130 is skipping self-test table entry 143.
+Result: ERROR                Value: SKIP
+
+Self-test step 26 = self test table entry #130 is skipping self-test table entry 144.
+Result: ERROR                Value: SKIP
+
+Executing self-test step 27 = self-test table entry #145.
+Read el motor temps
+El Motor 1 Temp: -35C
+El Motor 2 Temp: -37C
+El Motor 3 Temp: -35C
+El Motor 4 Temp: -38C
+Result: OK
+
+Executing self-test step 28 = self-test table entry #146.
+Activate el preset mode, time-out = 2s.
+Executing "Preset"
+Result: OK
+
+Executing self-test step 29 = self-test table entry #147.
+Preset el to 45 degrees
+Executing "Stop"
+Executing "Preset"
+Elevation preset position reached before time-out of 100s.
+Elevation position error within range, position error = 0, delta = 0.0002.
+Result: OK
+
+Executing self-test step 30 = self-test table entry #148.
+Check open shutter
+Result: OK
+
+Executing self-test step 31 = self-test table entry #157.
+Activate el rate mode, time-out = 3s.
+Executing "Rate"
+Result: OK
+
+Executing self-test step 32 = self-test table entry #158.
+Check mean el axis velocity
+Executing "Rate"
+Elevation rate position reached before time-out of 100s.
+Elevation mode correct, mode = SHUTDOWN.
+Elevation position below soft limit, position = 90.2385, softlimit = 90.3.
+Elevation position below hard limit, position = 90.2385.
+Elevation mean velocity jitter within range, mean velocity jitter = 0.0061399999999998, delta = 0.1.
+El motor #1:  torque = 3.084.
+El motor #2:  torque = -0.41.
+El motor #3:  torque = -3.286.
+El motor #4:  torque = 0.546.
+El average torque = 1.3535
+meantorqueelsum:1.3535Elevation mean torque within range, mean torque = 1.3535, target torque = 2, delta = 1.
+Result: OK
+
+Executing self-test step 33 = self-test table entry #159.
+Check mean el motor torque
+Result: OK
+
+Executing self-test step 34 = self-test table entry #160.
+Check velocity at el softlimit
+Result: OK
+
+Executing self-test step 35 = self-test table entry #162.
+Check close shutter
+Result: OK
+
+Executing self-test step 36 = self-test table entry #163.
+Check el hard prelimit
+Result: OK
+
+Executing self-test step 37 = self-test table entry #164.
+Check motion termination at el softlimit
+Result: OK
+
+Executing self-test step 38 = self-test table entry #165.
+Check el stop mode after softlimit
+Result: OK
+
+Executing self-test step 39 = self-test table entry #166.
+Check el hardlimit not set
+Result: OK
+
+Executing self-test step 40 = self-test table entry #167.
+Executing "Stop"
+Executing "Preset"
+Elevation preset position reached before time-out of 100s.
+Elevation position error within range, position error = 0, delta = 0.0025.
+Executing "StowMaintenance"
+Stow Position: 90
+StowWnd:0.015
+Elevation mode correct, mode = MAINTENANCE.
+88.7708 - 90
+Elevation stow, abs = 1.2292, stowwnd = 0.015
+89.0689 - 90
+Elevation stow, abs = 0.9311, stowwnd = 0.015
+89.3702 - 90
+Elevation stow, abs = 0.6298, stowwnd = 0.015
+89.6703 - 90
+Elevation stow, abs = 0.3297, stowwnd = 0.015
+89.8912 - 90
+Elevation stow, abs = 0.1088, stowwnd = 0.015
+89.9894 - 90
+Elevation stow, abs = 0.010599999999997, stowwnd = 0.015
+Elevation in stow position, position = 89.9915, stow position = 90, window = 0.015.
+Elevation stow position signal set.
+Stow Pin not Retrected: 1
+Elevation stow pin not retracted signal is set.
+Elevation stow pin inserted signal set.
+Elevation mode correct, mode = STOW.
+stowmodeok = 1
+stowposok = 1
+stowpossignalok = 1
+stowpinretractedok = 1
+shutdownok = 1
+stowpininsertedok = 1
+Check el maintenance stow mode activated
+Result: OK
+
+Executing self-test step 41 = self-test table entry #168.
+Check el stow position
+Result: OK
+
+Executing self-test step 42 = self-test table entry #169.
+Check el plc stow position signal
+Result: OK
+
+Executing self-test step 43 = self-test table entry #170.
+Check el stow pin retracted signal
+Result: OK
+
+Executing self-test step 44 = self-test table entry #171.
+Check el shutdown activated
+Result: OK
+
+Executing self-test step 45 = self-test table entry #172.
+Check signal el stow pin inserted
+Result: OK
+
+Executing self-test step 46 = self-test table entry #173.
+Check el unstow mode activated
+Unstowing el, time-out = 2s.
+Executing "Unstow"
+Elevation mode correct, mode = UNSTOW.
+Result: OK
+
+Executing self-test step 47 = self-test table entry #174.
+Check el stow pin retracted
+Result: OK
+
+Executing self-test step 48 = self-test table entry #175.
+Activate el stop mode, time-out = 2s.
+Executing "Stop"
+Result: OK
+
+Executing self-test step 49 = self-test table entry #176.
+Activate el rate mode, time-out = 3s.
+Executing "Rate"
+Result: OK
+
+Executing self-test step 50 = self-test table entry #177.
+Executing "Rate"
+Elevation rate position reached before time-out of 100s.
+Elevation mode correct, mode = SHUTDOWN.
+Elevation position below soft limit, position = 1.9617, softlimit = 1.8.
+Elevation position below hard limit, position = 1.9617.
+Elevation mean velocity jitter within range, mean velocity jitter = 0.0037000000000003, delta = 0.1.
+El motor #1:  torque = -0.914.
+El motor #2:  torque = -4.75.
+El motor #3:  torque = 1.048.
+El motor #4:  torque = 4.458.
+El average torque = -2.7925
+meantorqueelsum:-2.7925Elevation mean torque within range, mean torque = -2.7925, target torque = 2.35, delta = 1.
+Check mean el axis velocity
+Result: OK
+
+Executing self-test step 51 = self-test table entry #178.
+Check mean el motor torque
+Result: OK
+
+Executing self-test step 52 = self-test table entry #179.
+Check velocity at el softlimit
+Result: OK
+
+Executing self-test step 53 = self-test table entry #180.
+Check el hard prelimit
+Result: OK
+
+Executing self-test step 54 = self-test table entry #181.
+Check motion termination at el softlimit
+Result: OK
+
+Executing self-test step 55 = self-test table entry #182.
+Check el stop mode after softlimit
+Result: OK
+
+Executing self-test step 56 = self-test table entry #183.
+Check el hardlimit not set
+Result: OK
+
+Executing self-test step 57 = self-test table entry #184.
+Activate el survival stow mode, time-out = 2s.
+Executing "Stop"
+Executing "Preset"
+Elevation preset position reached before time-out of 100s.
+Elevation position error within range, position error = 0, delta = 0.0025.
+Executing "StowSurvival"
+Stow Position: 15
+StowWnd:0.015
+Elevation mode correct, mode = STOW.
+15 - 15
+Elevation stow, abs = 0, stowwnd = 0.015
+Elevation in stow position, position = 15, stow position = 15, window = 0.015.
+Elevation stow position signal set.
+Stow Pin not Retrected: 1
+Elevation stow pin not retracted signal is set.
+Elevation stow pin inserted signal set.
+Elevation mode correct, mode = STOW.
+stowmodeok = 1
+stowposok = 1
+stowpossignalok = 1
+stowpinretractedok = 1
+shutdownok = 1
+stowpininsertedok = 1
+Check el survival stow mode activated
+Result: OK
+
+Executing self-test step 58 = self-test table entry #185.
+Check el stow position
+Result: OK
+
+Executing self-test step 59 = self-test table entry #186.
+Check el plc stow position signal
+Result: OK
+
+Executing self-test step 60 = self-test table entry #187.
+Check el stow pin retracted signal
+Result: OK
+
+Executing self-test step 61 = self-test table entry #188.
+Check el shutdown activated
+Result: OK
+
+Executing self-test step 62 = self-test table entry #189.
+Check signal el stow pin inserted
+Result: OK
+
+Executing self-test step 63 = self-test table entry #190.
+Check el unstow mode activated
+Unstowing el, time-out = 2s.
+Executing "Unstow"
+Elevation mode correct, mode = UNSTOW.
+Result: OK
+
+Executing self-test step 64 = self-test table entry #191.
+Check el stow pin retracted
+Result: OK
+
+Executing self-test step 65 = self-test table entry #192.
+Activate el stop mode, time-out = 2s.
+Executing "Stop"
+Result: OK
+
+Executing self-test step 66 = self-test table entry #193.
+Activate el preset mode, time-out = 2s.
+Executing "Preset"
+Result: OK
+
+Executing self-test step 67 = self-test table entry #194.
+Preset el to 45 degrees
+Executing "Stop"
+Executing "Preset"
+Elevation preset position reached before time-out of 100s.
+Elevation position error within range, position error = 0, delta = 0.0002.
+Result: OK
+
+Executing self-test step 68 = self-test table entry #195.
+Activate el stop mode, time-out = 2s.
+Executing "Stop"
+Result: OK
+
+Executing self-test step 69 = self-test table entry #196.
+Check el motor temperature rise
+El-Motor1: -35C -> -35 C
+El-Motor2: -37C -> -37 C
+El-Motor3: -35C -> -35 C
+El-Motor4: -38C -> -37 C
+Result: OK
+
+Executing self-test step 70 = self-test table entry #197.
+Check open shutter
+Result: OK
+
+Executing self-test step 71 = self-test table entry #200.
+Executing "Stop"
+Executing "Preset"
+no Preset
+Result: ERROR                Value: SKIP
+
+Self-test step 71 = self test table entry #200 is skipping self-test table entry 201.
+Result: ERROR                Value: SKIP
+
+Self-test step 71 = self test table entry #200 is skipping self-test table entry 202.
+Result: ERROR                Value: SKIP
+
+Self-test step 71 = self test table entry #200 is skipping self-test table entry 203.
+Result: ERROR                Value: SKIP
+
+Self-test step 71 = self test table entry #200 is skipping self-test table entry 204.
+Result: ERROR                Value: SKIP
+
+Self-test step 71 = self test table entry #200 is skipping self-test table entry 205.
+Result: ERROR                Value: SKIP
+
+Self-test step 71 = self test table entry #200 is skipping self-test table entry 206.
+Result: ERROR                Value: SKIP
+
+Self-test step 71 = self test table entry #200 is skipping self-test table entry 207.
+Result: ERROR                Value: SKIP
+
+Self-test step 71 = self test table entry #200 is skipping self-test table entry 208.
+Result: ERROR                Value: SKIP
+
+Self-test step 71 = self test table entry #200 is skipping self-test table entry 209.
+Result: ERROR                Value: SKIP
+
+Self-test step 71 = self test table entry #200 is skipping self-test table entry 210.
+Result: ERROR                Value: SKIP
+
+Self-test step 71 = self test table entry #200 is skipping self-test table entry 211.
+Result: ERROR                Value: SKIP
+
+Self-test step 71 = self test table entry #200 is skipping self-test table entry 212.
+Result: ERROR                Value: SKIP
+
+Self-test step 71 = self test table entry #200 is skipping self-test table entry 213.
+Result: ERROR                Value: SKIP
+
+Self-test step 71 = self test table entry #200 is skipping self-test table entry 214.
+Result: ERROR                Value: SKIP
+
+Self-test step 71 = self test table entry #200 is skipping self-test table entry 215.
+Result: ERROR                Value: SKIP
+
+Self-test step 71 = self test table entry #200 is skipping self-test table entry 216.
+Result: ERROR                Value: SKIP
+
+Executing self-test step 72 = self-test table entry #235.
+Executing "Stop"
+Executing "Preset"
+no Preset
+Result: ERROR                Value: SKIP
+
+Self-test step 72 = self test table entry #235 is skipping self-test table entry 236.
+Result: ERROR                Value: SKIP
+
+Self-test step 72 = self test table entry #235 is skipping self-test table entry 237.
+Result: ERROR                Value: SKIP
+
+Executing self-test step 73 = self-test table entry #238.
+Executing "Stop"
+Executing "Preset"
+no Preset
+Result: ERROR                Value: SKIP
+
+Self-test step 73 = self test table entry #238 is skipping self-test table entry 239.
+Result: ERROR                Value: SKIP
+
+Self-test step 73 = self test table entry #238 is skipping self-test table entry 240.
+Result: ERROR                Value: SKIP
+
+Executing self-test step 74 = self-test table entry #241.
+Executing "Stop"
+Result: OK
+
+Executing self-test step 75 = self-test table entry #242.
+Result: OK
+
+Executing self-test step 76 = self-test table entry #243.
+Result: OK
+
+Executing self-test step 77 = self-test table entry #500.
+Reading Temperature Sensor 1 = -18 C
+Reading Temperature Sensor 2 = -18.7 C
+Reading Temperature Sensor 3 = -18.4 C
+Reading Temperature Sensor 4 = -18.5 C
+Reading Temperature Sensor 5 = 13.2 C
+Reading Temperature Sensor 6 = 12.5 C
+Reading Temperature Sensor 7 = 11.1 C
+Reading Temperature Sensor 8 = 10.5 C
+Reading Temperature Sensor 9 = 13.1 C
+Reading Temperature Sensor 10 = -10.4 C
+Reading Temperature Sensor 11 = -14.4 C
+Reading Temperature Sensor 12 = -18.6 C
+Reading Temperature Sensor 13 = -15.5 C
+Reading Temperature Sensor 14 = -16 C
+Reading Temperature Sensor 15 = -17.9 C
+Reading Temperature Sensor 16 = -18.3 C
+Reading Temperature Sensor 17 = -17.4 C
+Reading Temperature Sensor 18 = -17.9 C
+Reading Temperature Sensor 19 = -19.1 C
+Reading Temperature Sensor 20 = -20 C
+Reading Temperature Sensor 21 = 2.4 C
+Reading Temperature Sensor 22 = 2.6 C
+Reading Temperature Sensor 23 = -0.2 C
+Reading Temperature Sensor 24 = -1.7 C
+Reading Temperature Sensor 25 = -1 C
+Reading Temperature Sensor 26 = -0.1 C
+Reading Temperature Sensor 27 = -21.9 C
+Reading Temperature Sensor 28 = -19.2 C
+Reading Temperature Sensor 29 = -20.7 C
+Reading Temperature Sensor 30 = -21.5 C
+Reading Temperature Sensor 31 = -20.9 C
+Reading Temperature Sensor 32 = 299.99 C
+Reading Temperature Sensor 33 = -24.9 C
+Reading Temperature Sensor 34 = 299.99 C
+Reading Temperature Sensor 35 = 299.99 C
+Reading Temperature Sensor 36 = -20.2 C
+Reading Temperature Sensor 37 = 9.1 C
+Reading Temperature Sensor 38 = 0 C
+Reading Temperature Sensor 39 = 0 C
+Reading Temperature Sensor 40 = 0 C
+Reading Temperature Sensor 41 = 0 C
+Reading Temperature Sensor 42 = 0 C
+Reading Temperature Sensor 43 = 0 C
+Reading Temperature Sensor 44 = 0 C
+Reading Temperature Sensor 45 = 0 C
+Reading Temperature Sensor 46 = 0 C
+Reading Temperature Sensor 47 = 0 C
+Reading Temperature Sensor 48 = 0 C
+Reading Temperature Sensor 49 = 0 C
+Reading Temperature Sensor 50 = 0 C
+Ambient Temperature = -20.2
+Result: OK
+
+Executing self-test step 78 = self-test table entry #501.
+Temperatures at Receiver Cabin Walls
+Sensors 5-9
+Max. Temperature13.2 C
+Min. Temperature10.5 C
+Mean Temperature12.08 C
+Expected all Sensors to be in Range: 8C to 20C
+Result: OK
+
+Executing self-test step 79 = self-test table entry #502.
+Temperatures at Receiver Cabin Walls(Delta)
+Sensors 5-9
+Expected Delta between max and min:2
+Delta (13.2C - 10.5 C) :2.7 C
+2.7C -> expected: < 2C
+Result: ERROR                Values: 2.7
+
+Executing self-test step 80 = self-test table entry #503.
+Temperatures at Yoke (Diff)
+Sensors 10-20
+Mean Temperature: -16.863636363636 C
+All Temperature sensors should be in the range of:
+-21.863636363636 C  -  -11.863636363636 C
+1 Sensors were out of this range.
+Result: ERROR                Values: 1
+
+Executing self-test step 81 = self-test table entry #504.
+Temperatures at Support Cone (Diff)
+Sensors 1-4
+Mean Temperature: -16.863636363636 C
+All Temperature sensors should be in the range of:
+-19.363636363636 C  -  -14.363636363636 C
+Result: OK
+
+Executing self-test step 82 = self-test table entry #505.
+Temperatures at Support Cone
+Sensors 1-4
+Temperatures between -35 C and 5 C expected.
+-18 C
+-18.7 C
+-18.4 C
+-18.5 C
+Result: OK
+
+Executing self-test step 83 = self-test table entry #506.
+Temperatures at Bottom of Quadlegs
+Sensors 32-35
+Ambient Temperature: -20.2 C
+-30.2 C - -10.2 C expected
+299.99 C
+-24.9 C
+299.99 C
+299.99 C
+Result: ERROR                Values: 3
+
+Executing self-test step 84 = self-test table entry #507.
+Temperatures at Top of Quadlegs (Diff)
+Sensors 27-31
+Result: OK
+
+Executing self-test step 85 = self-test table entry #508.
+Temperatures at Top of Quadlegs
+Sensors 27-31
+Result: OK
+
+Executing self-test step 86 = self-test table entry #509.
+Temperature Sensor 37 must be between -20 C and +20 C
+measured value: 9.1 C
+Result: OK
+
+Executing self-test step 87 = self-test table entry #510.
+Temperatures at Az Gearboxes (Diff)
+Sensors 21-22
+Mean Temperature: 2.5 C
+All Temperature sensors should be in the range of:
+-2.5 C  -  7.5 C
+Result: OK
+
+Executing self-test step 88 = self-test table entry #511.
+Temperatures at Az Gearboxes
+Sensors 21-22
+Gearbox Tempertaures should be between -10 C and 10 C
+Result: OK
+
+Executing self-test step 89 = self-test table entry #512.
+Temperatures at El Gearboxes (Diff)
+Sensors 23-26
+Mean Temperature: -0.75 C
+All Temperature sensors should be in the range of:
+-5.75 C  -  4.25 C
+Result: OK
+
+Executing self-test step 90 = self-test table entry #513.
+Temperatures at El Gearboxes
+Sensors 23-26
+Gearbox Tempertaures should be between -10 C and 10 C
+Result: OK
+
+Executing self-test step 91 = self-test table entry #530.
+Linear Sensor 1A
++- 1mm exspected
+Reading Linear Sensor 1A = -0.225 mm
+Result: OK
+
+Executing self-test step 92 = self-test table entry #531.
+Linear Sensor 1B
++- 1mm exspected
+Reading Linear Sensor 1B = -0.19 mm
+Result: OK
+
+Executing self-test step 93 = self-test table entry #532.
++- 1mm exspected
+Linear Sensor 2A
+Reading Linear Sensor 2A = -0.093 mm
+Result: OK
+
+Executing self-test step 94 = self-test table entry #533.
++- 1mm exspected
+Linear Sensor 2B
+Reading Linear Sensor 2B = -0.063 mm
+Result: OK
+
+Executing self-test step 95 = self-test table entry #550.
+Activate az preset mode, time-out = 2s.
+Executing "Preset"
+Time-out!  Azimuth mode is not PRESET but SHUTDOWN.
+Result: ERROR                Value: SKIP
+
+Self-test step 95 = self test table entry #550 is skipping self-test table entry 551.
+Result: ERROR                Value: SKIP
+
+Self-test step 95 = self test table entry #550 is skipping self-test table entry 552.
+Result: ERROR                Value: SKIP
+
+Self-test step 95 = self test table entry #550 is skipping self-test table entry 553.
+Result: ERROR                Value: SKIP
+
+Self-test step 95 = self test table entry #550 is skipping self-test table entry 554.
+Result: ERROR                Value: SKIP
+
+Self-test step 95 = self test table entry #550 is skipping self-test table entry 555.
+Result: ERROR                Value: SKIP
+
+Self-test step 95 = self test table entry #550 is skipping self-test table entry 556.
+Result: ERROR                Value: SKIP
+
+Self-test step 95 = self test table entry #550 is skipping self-test table entry 557.
+Result: ERROR                Value: SKIP
+
+Self-test step 95 = self test table entry #550 is skipping self-test table entry 558.
+Result: ERROR                Value: SKIP
+
+Self-test step 95 = self test table entry #550 is skipping self-test table entry 559.
+Result: ERROR                Value: SKIP
+
+Self-test step 95 = self test table entry #550 is skipping self-test table entry 560.
+Result: ERROR                Value: SKIP
+
+Executing self-test step 96 = self-test table entry #561.
+Tiltmeter 1 Temperature
+Temperature of Sensor 12: -18.6C
+Temperature of Tiltmeter1: -16.5C
+Result: OK
+
+Executing self-test step 97 = self-test table entry #562.
+Tiltmeter 2 Temperature
+Temperature of Cone: -18.4C
+Temperature of Tiltmeter2: -19.1C
+Result: OK
+
+Executing self-test step 98 = self-test table entry #563.
+Tiltmeter 3 Temperature
+Temperature of Cone: -18.4C
+Temperature of Tiltmeter3: -19C
+Result: OK
+
+Executing self-test step 99 = self-test table entry #564.
+Tiltmeter 2 Tilt
+Tilt should be between -800 mdeg and 800 mdeg
+Tilt X : -13.0283 mdeg
+Tilt Y : 7.5532 mdeg
+Result: OK
+
+Executing self-test step 100 = self-test table entry #565.
+Tiltmeter 3 Tilt
+Tilt should be between -40 mdeg and 40 mdeg
+Tilt X : -2.0251 mdeg
+Tilt Y : -34.1157 mdeg
+Result: OK
+
+Executing self-test step 101 = self-test table entry #900.
+Shutter te
+Result: OK
+
+Executing self-test step 102 = self-test table entry #901.
+Az stow pin te
+Result: OK
+
+Executing self-test step 103 = self-test table entry #902.
+El stow pin te
+Result: OK
+
+Executing self-test step 104 = self-test table entry #903.
+System Test
+General System Status Bytes
+Received from PLC referring to ICD-1013019-31420
+4.3.9.1
+All Values are decimal
+Byte 1  = 0
+Byte 2  = 0
+Byte 3  = 4
+Byte 4  = 0
+Byte 5  = 32
+Byte 6  = 0
+Byte 7  = 0
+Byte 8  = 0
+0 Errors were fount
+Result: OK
+
+Executing self-test step 105 = self-test table entry #904.
+Azimut Axis Test
+Axis Status Bytes Azimuth
+Received from PLC referring to ICD-1013019-31420
+4.3.10.1
+All Values are decimal
+Byte 1  = 0
+Byte 2  = 4
+Byte 3  = 0
+Byte 4  = 4
+Byte 5  = 0
+Byte 6  = 196
+Byte 7  = 72
+Byte 8  = 0
+Byte 9  = 32
+Byte 10  = 0
+Byte 11  = 0
+Byte 12  = 0
+Az Axis status bit "Brake 1 failure" is set.
+1 Errors were fount
+Result: ERROR                Value: FAIL
+
+Executing self-test step 106 = self-test table entry #906.
+Elevation Axis Test
+Axis Status Bytes Azimuth
+Received from PLC referring to ICD-1013019-31420
+4.3.10.1
+All Values are decimal
+Byte 1  = 0
+Byte 2  = 0
+Byte 3  = 0
+Byte 4  = 4
+Byte 5  = 4
+Byte 6  = 12
+Byte 7  = 72
+Byte 8  = 0
+Byte 9  = 0
+Byte 10  = 0
+Byte 11  = 64
+Byte 12  = 0
+el[0 ]= 0
+el[1 ]= 0
+el[2 ]= 0
+el[3 ]= 4
+el[4 ]= 4
+el[5 ]= 12
+el[6 ]= 72
+el[7 ]= 0
+el[8 ]= 0
+el[9 ]= 0
+el[10 ]= 64
+el[11 ]= 0
+El Axis status bit "Gearbox 3 low oil level" is set.
+1 Errors were fount
+Result: ERROR                Value: FAIL
+
+Executing self-test step 107 = self-test table entry #910.
+Check mms status
+Result: OK
+
+Executing "StowSurvival"
+70 out of 161 tests failed.
+
+NOV 08 01:46:57:2018 Self-test finished

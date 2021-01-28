@@ -1,0 +1,63 @@
+#gcc -I/global/include -I/common/include -L/common/lib -o az az.c -ldsm -lpthread -lsmapopt -lrt
+#
+#CC = gcc -D LINUX -I$(GLOBALINC) -I$(COMMONINC) -L$(COMMONLIB) 
+CC = gcc -D LINUX -I /global/dsm64 -L /global/dsm64
+CFLAGS = -g -O -Wall
+#LIB = -lrt $(COMMONLIB)/rm.o $(COMMONLIB)/libdsm.a $(COMMONLIB)/commonLib -lcurses -lm
+LIB = -ldsm -lpthread -lpopt -lrt
+
+COMMONINC = /common/include/
+COMMONLIB = /common/lib/
+GLOBALINC = /global/include/
+
+SOURCES = az.c el.c azel.c azoff.c eloff.c stop.c engage.c observe.c optical.c radio.c value.c stow.c unstow.c azelrate.c shutter.c setSelfTest.c
+
+OBJECTS = az.o el.o azel.o azoff.c eloff.c stop.o engage.o observe.o optical.o radio.o value.o stow.o unstow.o azelrate.o shutter.o setSelfTest.o
+
+all: az el azel azoff eloff stop engage observe optical radio value stow unstow azelrate shutter setSelfTest
+
+clean:
+	rm *.o ./az ./el ./azoff ./eloff ./observe ./stop ./engage ./azelrate ./shutter
+
+#install: all
+#	cp stop $(OBSBIN)/
+#	cp engage $(OBSBIN)/
+
+az : az.o 
+	$(CC) -o az az.o $(LIB)
+el : el.o 
+	$(CC) -o el el.o $(LIB)
+azel : azel.o 
+	$(CC) -o azel azel.o $(LIB)
+azelrate : azelrate.o 
+	$(CC) -o azelrate azelrate.o $(LIB)
+azoff : azoff.o 
+	$(CC) -o azoff azoff.o $(LIB)
+eloff : eloff.o 
+	$(CC) -o eloff eloff.o $(LIB)
+stop : stop.o 
+	$(CC) -o stop stop.o $(LIB)
+engage : engage.o 
+	$(CC) -o engage engage.o $(LIB)
+observe : observe.o 
+	$(CC) -o observe observe.o $(LIB)
+optical : optical.o 
+	$(CC) -o optical optical.o $(LIB)
+radio : radio.o 
+	$(CC) -o radio radio.o $(LIB)
+value : value.o 
+	$(CC) -o value value.o $(LIB)
+stow : stow.o 
+	$(CC) -o stow stow.o $(LIB)
+unstow : unstow.o 
+	$(CC) -o unstow unstow.o $(LIB)
+shutter : shutter.o 
+	$(CC) -o shutter shutter.o $(LIB)
+setSelfTest : setSelfTest.o 
+	$(CC) -o setSelfTest setSelfTest.o $(LIB)
+
+depend: ./Makefile
+	$(CC) -MM $(SOURCES) > dependencies
+
+include dependencies
+
